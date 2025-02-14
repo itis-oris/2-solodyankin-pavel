@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Text?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.controller.NameController" stylesheets="@../styles/style.css" styleClass="stack-pane">
+    <VBox alignment="CENTER" spacing="30">
+        <Text text="Введите своё имя" styleClass="text"/>
+        <TextField fx:id="usernameField" promptText="Введите своё имя" styleClass="text-field"/>
+        <Button text="Ввод" onAction="#handleNameButtonAction" styleClass="button"/>
+    </VBox>
+</StackPane>
